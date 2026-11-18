@@ -191,7 +191,72 @@
 
         <section id="inscripcion">
             <h2>Inscripción</h2>
-            <p></p>
+
+            <p>Completa el formulario para solicitar tu participación.</p>
+
+            <form action="https://webhook.site/13fbab15-a243-4590-ac8a-55e6651a11d6" method="post">
+
+                <fieldset>
+                    <legend>Datos personales</legend>
+
+                    <label for="nombre">Nombre y apellidos:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    <br><br>
+
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" name="correo" required>
+                    <br><br>
+
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Preferencias</legend>
+
+                    <label for="actividad">Actividad preferida:</label>
+                    <select id="actividad" name="actividad" required>
+                        <option value="">Selecciona una actividad</option>
+                        <option value="concierto">Concierto de rock</option>
+                        <option value="swing">Clase de baile swing</option>
+                        <option value="disfraces">Concurso de disfraces</option>
+                        <option value="mercadillo">Mercadillo de ropa de época</option>
+                    </select>
+
+                    <p>Horario preferido:</p>
+
+                    <input type="radio" id="tarde" name="horario" value="tarde">
+                    <label for="tarde">Tarde</label>
+
+                    <input type="radio" id="noche" name="horario" value="noche">
+                    <label for="noche">Noche</label>
+
+                    <p>Servicios de interés:</p>
+
+                    <input type="checkbox" id="comida" name="servicio_comida" value="si">
+                    <label for="comida">Zona de comida y bebida</label>
+                    <br>
+
+                    <input type="checkbox" id="punto_informacion" name="servicio_informacion" value="si">
+                    <label for="punto_informacion">Punto de información</label>
+                    <br>
+
+                    <input type="checkbox" id="aseos" name="servicio_aseos" value="si">
+                    <label for="aseos">Aseos</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Comentarios</legend>
+
+                    <label for="comentarios">¿Quieres añadir algo?</label>
+                    <br>
+                    <textarea id="comentarios" name="comentarios" rows="4" cols="40"></textarea>
+                </fieldset>
+
+                <br>
+                <button type="submit">Enviar inscripción</button>
+
+            </form>
         </section>
 
         <aside id="informacion">
@@ -210,6 +275,18 @@
                 <li>Aseos.</li>
                 <li>Punto de información.</li>
             </ul>
+
+            <h3>Enlaces de interés</h3>
+            <p>
+                <a href="https://www.maspalomas.com/index.php/cultura-y-accion-social/cultura">
+                    Cultura del Ayuntamiento de San Bartolomé de Tirajana
+                </a>
+            </p>
+            <p>
+                <a href="https://guaguasglobal.com/lineas-horarios/">
+                    Consulta las líneas y horarios de Guaguas Global
+                </a>
+            </p>
         </aside>
 
         <section id="privacidad">
